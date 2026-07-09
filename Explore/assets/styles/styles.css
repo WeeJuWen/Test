@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Font Families */
+.font-serif-sc {
+    font-family: 'Noto Serif SC', serif;
+}
+
+/* Button focus state to prevent color changes on click */
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* Event description truncation */
+.event-description {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 2.8em;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+/* Navigation Links - Desktop */
+.nav-link {
+    color: #57534e;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #f59e0b;
+}
+
+.nav-link.active {
+    color: #f59e0b !important;
+    font-weight: 600 !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f59e0b;
+}
+
+/* Navigation Links - Mobile */
+.nav-link-mobile {
+    display: block;
+    padding: 0.5rem 0;
+    color: #57534e;
+}
+
+.nav-link-mobile:hover {
+    color: #f59e0b;
+}
+
+.nav-link-mobile.active {
+    color: #f59e0b !important;
+    font-weight: 600 !important;
+}
